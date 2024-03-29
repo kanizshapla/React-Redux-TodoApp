@@ -1,12 +1,13 @@
-import React, { useState } from "react";
 import {
   Button,
-  TextField,
   Dialog,
   DialogActions,
   DialogContent,
   DialogTitle,
+  TextField,
+  Typography,
 } from "@material-ui/core";
+import React, { useState } from "react";
 
 const TodoForm = ({ onSaveTodo }) => {
   const [open, setOpen] = useState(false);
@@ -33,14 +34,16 @@ const TodoForm = ({ onSaveTodo }) => {
 
   return (
     <div>
-      <Button
-        variant="outlined"
-        color="primary"
-        onClick={handleClickOpen}
-        style={{ marginBottom: "2rem" }}
-      >
-        Add Todo
-      </Button>
+      <Typography align="center">
+        <Button
+          variant="outlined"
+          color="primary"
+          onClick={handleClickOpen}
+          style={{ marginBottom: "2rem" }}
+        >
+          Add Todo
+        </Button>
+      </Typography>
       <Dialog
         open={open}
         onClose={handleClose}
