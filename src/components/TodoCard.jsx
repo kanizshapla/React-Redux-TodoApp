@@ -133,7 +133,7 @@ const TodoCard = ({ todo, onDeleteTodo, onEditTodo }) => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
-            Cancle
+            Cancel
           </Button>
           <Button onClick={handleSave} color="primary">
             Save
